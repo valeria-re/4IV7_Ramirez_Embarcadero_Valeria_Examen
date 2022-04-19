@@ -43,7 +43,7 @@ public class mostrarR extends HttpServlet {
      */
     public void init(ServletConfig cfg) throws ServletException {
 
-        String URL = "jdbc:mysql:3306//localhost/registroa";
+        String URL = "jdbc:mysql:3306//localhost/registromaquinas";
 
         String userName = "root";
         String password = "n0m3l0";
@@ -52,7 +52,7 @@ public class mostrarR extends HttpServlet {
 
             Class.forName("com.mysql.jdbc.Driver");
 
-            URL = "jdbc:mysql://localhost/registroa";
+            URL = "jdbc:mysql://localhost/registromaquinas";
 
             con = DriverManager.getConnection(URL, userName, password);
             set = con.createStatement();

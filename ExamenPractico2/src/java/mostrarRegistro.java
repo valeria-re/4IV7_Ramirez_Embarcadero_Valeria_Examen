@@ -43,7 +43,7 @@ public class mostrarRegistro extends HttpServlet {
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            String URL = "jdbc:mysql://localhost/registroa";
+            String URL = "jdbc:mysql://localhost/registromaquinas";
             con = DriverManager.getConnection(URL, userName, password);
             set = con.createStatement();
 
